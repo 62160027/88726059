@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multi</title>
+        <p>2.โปรแกรม สูตรคูณ - Multi</p>
+    <script>
+        function fun(n) {
+            div = document.getElementById('disp')
+            div.innerHTML = ''
+            table = `` 
+
+            for (i = 1; i <= 12; i++) {
+                table += `<tr>
+                            <td>${n} x ${i} = </td>
+                            <td>${n*i}</td>
+                        </tr>`               
+        }
+        div.innerHTML = table
+    }  
+    </script>
+    </head>
+    <body >
+        <input type="text" placeholder="ใส่เลขที่ต้องการทราบสูตรคูณ" onkeyup="fun(this.value);">
+        <table border="1" >
+        <tbody id="disp">   
+        </tbody>
+        </table>
+    </body>  
+</html>
